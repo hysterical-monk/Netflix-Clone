@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">NETFLIX</div>
+    <div class="nav-links">
+      <a href="#" onclick="loadCategory('popular')">Popular</a>
+      <a href="#" onclick="loadCategory('new')">New Movies</a>
+      <a href="#" onclick="loadCategory('trending')">Trending Now</a>
+    </div>
+    <div class="profile">
+      <button onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows, and more</h1>
+      <p>Watch anywhere. Cancel anytime.</p>
+    </div>
+  </section>
+
+  <!-- Movie Rows -->
+  <div class="movie-row">
+    <h2 id="category-title">Popular on Netflix</h2>
+    <div class="row-posters" id="movies">
+      <!-- Movies will load here dynamically -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

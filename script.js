@@ -68,4 +68,4 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.removeItem('loggedIn');
     window.location.href = 'index.html';
   }
-  
+
